@@ -1,0 +1,49 @@
+body {
+  margin: 0; /* eliminar margenes para que no afecten */
+  background: #222;
+  overflow: hidden;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;             /* usar flex para centrar */
+  justify-content: center;   /* centrar horizontalmente */
+  align-items: center;       /* centrar verticalmente */
+  height: 100vh;             /* altura total de la ventana */
+}
+#juego {
+  position: relative;
+  width: 480px;
+  height: 750px;
+  background: #333;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  overflow: hidden;          /* para que elementos no se salgan */
+  border-radius: 10px;       /* opcional: bordes redondeados */
+}
+.jugador {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  background: #4caf50;
+  border-radius: 5px;
+}
+.bala {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: yellow;
+}
+.enemigo {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: red;
+  border-radius: 50%;
+}
+#info {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 18px;
+}

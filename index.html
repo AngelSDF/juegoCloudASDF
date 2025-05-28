@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Juego de Disparos</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <div id="juego">
+    <div class="jugador" id="jugador"></div>
+    <div id="info">
+      Puntaje: <span id="puntaje">0</span> | Vidas: <span id="vidas">5</span>
+    </div>
+    <div id="estado-juego" style="position: absolute; top: 50%; left: 50%; 
+      transform: translate(-50%, -50%); font-size: 48px; color: white; display: none; z-index: 999;">
+    </div>
+  </div>
+  <script src="juego.js"></script>
+</body>
+</html>
