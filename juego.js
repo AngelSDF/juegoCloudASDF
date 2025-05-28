@@ -166,13 +166,16 @@ function limpiarJuego() {
   clearInterval(enemigoIntervaloID);
 }
 function reiniciarJuego() {
-  enemigoIntervaloID = setInterval(crearEnemigosSegunPuntaje, 2000);
+  limpiarJuego(); // Primero limpia y detiene todo
+
+  enemigoIntervaloID = setInterval(crearEnemigosSegunPuntaje, 2000); // Luego inicia nuevamente
+
   juegoTerminado = false;
   juegoPausado = false;
   puntaje = 0;
   vidas = 5;
+
   actualizarInfo();
   ocultarEstado();
-  limpiarJuego();
-  actualizar();
+  actualizar(); // Reinicia animación
 }
